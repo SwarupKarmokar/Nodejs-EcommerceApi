@@ -1,3 +1,5 @@
+// CREATING ERROR HANDLER FOR TACKLING ERROR MANUALY 
+
 const { constants } = require('../constant');
 
 const errorHandler = (err, req, res, next) => {

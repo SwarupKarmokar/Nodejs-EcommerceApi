@@ -1,3 +1,5 @@
+// CREATING TOKEN FOR UNIQUE IDENTITY FOR USER 
+
 const asyncHandler = require('express-async-handler');
 const jwt = require('jsonwebtoken');
 require('dotenv').config();

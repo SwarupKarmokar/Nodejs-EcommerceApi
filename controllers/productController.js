@@ -1,10 +1,12 @@
+// CREATING PRODUCT CONTROLLER 
+
 const asyncHandler = require('express-async-handler');
 const Product = require('../models/prouductSchema');
 
 
 // desc: add product 
 // route: POST /api/product/ 
-// access: public 
+// access: private
 
 const createProduct = asyncHandler(async (req, res) => {
     // res.send("create product page")
@@ -27,7 +29,7 @@ const createProduct = asyncHandler(async (req, res) => {
 
 // desc: get all products 
 // route: GET /api/product/
-// access: public 
+// access: private 
 
 const getProducts = asyncHandler(async (req, res) => {
     const products = await Product.find({ user_id: req.user.id });
@@ -40,7 +42,7 @@ const getProducts = asyncHandler(async (req, res) => {
 
 // desc: delete product 
 // route: DELETE /api/product/:id
-// access: public 
+// access: private
 
 const deleteProduct = asyncHandler(async (req, res) => {
     const product = await Product.findById(req.params.id);
@@ -60,7 +62,7 @@ const deleteProduct = asyncHandler(async (req, res) => {
 
 // desc: update product 
 // route: PUT /api/product/:id
-// access: public 
+// access: private
 
 const updateProduct = asyncHandler(async (req, res) => {
     const product = await Product.findById(req.params.id);

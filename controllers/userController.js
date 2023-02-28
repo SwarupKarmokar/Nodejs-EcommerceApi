@@ -1,3 +1,5 @@
+// CREATING USER CONTROLLER 
+
 const asyncHandler = require('express-async-handler');
 const User = require('../models/userSchema');
 const bcrypt = require('bcrypt');

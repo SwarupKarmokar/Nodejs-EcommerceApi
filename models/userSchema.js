@@ -1,3 +1,6 @@
+// CREATING USER SCHEMA FOR ADDING USER DATA INTO DATABASE
+
+
 const mongoose = require('mongoose');
 
 const userSchema = mongoose.Schema({
