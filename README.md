@@ -13,7 +13,9 @@ npm install
 
 #### Create a .env file in the root of the project and add your MongoDB connection string, JWT_SECRET, and other necessary configurations:
 MONGODB_URI=your-mongodb-connection-string
+
 JWT_SECRET_KEY=your-secret-key
+
 PORT=your-port-number
 
 #### Start the server:
